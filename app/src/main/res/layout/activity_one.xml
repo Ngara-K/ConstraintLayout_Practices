@@ -20,49 +20,58 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
-            <ImageView
-                android:id="@+id/imageView"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:src="@drawable/logo"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"/>
-
             <androidx.appcompat.widget.LinearLayoutCompat
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:paddingLeft="10dp"
-                android:paddingBottom="10dp"
-                android:orientation="vertical"
-                android:id="@+id/layout_Profile"
-                app:layout_constraintBottom_toTopOf="@id/occ"
-                app:layout_constraintLeft_toRightOf="@id/imageView">
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:id="@+id/linear_1"
+                android:orientation="horizontal">
 
-                <TextView
-                    android:id="@+id/name"
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/logo"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.appcompat.widget.LinearLayoutCompat
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Ngara Kiringo"
-                    android:textColor="@color/black"
-                    android:textSize="15sp"
-                    android:textStyle="bold" />
+                    android:layout_gravity="center"
+                    android:paddingStart="10dp"
+                    android:paddingBottom="10dp"
+                    android:orientation="vertical">
 
-                <TextView
-                    android:id="@+id/in"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="at"
-                    android:textColor="@color/gray"
-                    android:textSize="12sp" />
+                    <TextView
+                        android:id="@+id/name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Ngara Kiringo"
+                        android:textColor="@color/black"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
 
-                <TextView
-                    android:id="@+id/company"
-                    android:layout_width="wrap_content"
-                    android:textStyle="bold"
-                    android:layout_height="wrap_content"
-                    android:text="OCC, NAS AIRCO TZ"
-                    android:textColor="@color/royal_blue"
-                    android:textSize="14sp" />
+                    <TextView
+                        android:id="@+id/in"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="at"
+                        android:textColor="@color/gray"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/company"
+                        android:layout_width="wrap_content"
+                        android:textStyle="bold"
+                        android:layout_height="wrap_content"
+                        android:text="OCC, NAS AIRCO TZ"
+                        android:textColor="@color/royal_blue"
+                        android:textSize="14sp" />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
 
             </androidx.appcompat.widget.LinearLayoutCompat>
 
@@ -78,7 +87,7 @@ The OCC ensures highly automated and proactive operation, resulting in reduced o
 
 The OCC is a central, on-site IT support entity that proactively monitors the productive SAP environment (non-SAP applications can be also included). SAP recommends setting up a physical room within the IT support organization."
                 android:textSize="14sp"
-                app:layout_constraintTop_toBottomOf="@id/imageView">
+                app:layout_constraintTop_toBottomOf="@id/linear_1">
             </TextView>
 
             <View

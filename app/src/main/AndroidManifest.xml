@@ -8,15 +8,17 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
+        android:theme="@style/MaterialAppTheme">
+        <activity android:name=".Two"></activity>
         <activity
             android:name=".Activities"
             android:label="List of Activities" />
-        <activity android:name=".One"
-            android:label="ONE"/>
+        <activity
+            android:name=".One"
+            android:label="ONE" />
         <activity
             android:name=".Splash"
-            android:theme="@style/AppTheme_No_ActionBar">
+            android:theme="@style/Material_No_ActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

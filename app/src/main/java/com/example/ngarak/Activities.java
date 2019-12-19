@@ -19,5 +19,6 @@ public class Activities extends AppCompatActivity {
         btnTwo = findViewById(R.id.btn_two);
 
         btnOne.setOnClickListener(v -> startActivity(new Intent(Activities.this, One.class)));
+        btnTwo.setOnClickListener(v -> startActivity(new Intent(Activities.this, Two.class)));
     }
 }
